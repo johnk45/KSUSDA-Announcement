@@ -1,8 +1,8 @@
 <?php
 session_start();
-
+//This page usually connects the rest of the files with the database
 $host = 'localhost';
-$dbname = 'kusda_announcements';
+$dbname = 'kusda_announcements'; //you can change to your preferred database
 $username = 'root';      // change to your DB username
 $password = '';          // change to your DB password
 
@@ -17,4 +17,5 @@ try {
 function isAdminLoggedIn() {
     return isset($_SESSION['admin_id']);
 }
+
 ?>
